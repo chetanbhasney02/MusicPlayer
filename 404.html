@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>404 - Page Not found</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Oops! 404 - Page not found</h1>
+      <p>Redirecting to home in <span id="countdown"></span></p>
+    </div>
+
+    <script>
+        //Redirects to home after a delay
+        let remainingSeconds = 5;
+        const countDown = document.getElementById("countdown");
+        if (countDown)
+          countDown.innerHTML = remainingSeconds;
+
+        const intervalId = setInterval(() => {
+          remainingSeconds--;
+
+          if (remainingSeconds === 0) {
+            window.location.href = "/";
+            window.clearInterval(intervalId);	
+          } else if (countDown) {            
+            countDown.innerHTML = remainingSeconds;
+          }          
+        }, 1000);
+    </script>
+  </body>
+</html>

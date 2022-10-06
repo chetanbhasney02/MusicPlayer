@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fayas Noushad - Personal Website</title>
+    <link rel="icon" href="https://github.com/FayasNoushad.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  </head>
+  <body>
+    <header>
+      <a href="/">Home</a>
+      <a href="/accounts">Accounts</a>
+      <a href="/projects">Projects</a>
+      <a href="/donate">Donate</a>
+    </header>
+
+    <!-- Scroll to top button -->
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+    
+    
+    <hr width="100%"/>
+    <br/>
+    <br/>
+    <section data-aos="fade-down" class="section-1" style="color: white">
+      <h1 class="zoom-effect1">
+        <img data-aos="zoom-in" alt="Profile" src="https://github.com/FayasNoushad.png"/>
+      </h1>
+      <br/>
+      <h1>Fayas Noushad</h1>
+    </section>
+    <hr width="100%"/>
+    <section data-aos="fade-right" class="section-2" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello, My name is <b>Fayas Noushad</b>.
+        I am a 15 years old.
+        I was born on 30th December in 2005.
+        I am a 10th standard finished student.
+        I'm living in <a href="https://en.m.wikipedia.org/wiki/Palakkad_district">Palakkad, Kerala, India</a>.
+        The languages I know are <a href="https://en.m.wikipedia.org/wiki/Malayalam">Malayalam</a>,
+        <a href="https://en.m.wikipedia.org/wiki/Tamil">Tamil</a>, and
+        <a href="https://en.m.wikipedia.org/wiki/English">English</a>.
+        I am an Opensource Developer.
+        You can check my brief bio <a href="/bio">here</a>.
+      </p>
+    </section>
+    <hr width="100%"/>
+    <section data-aos="fade-up" class="section-3" id="accounts">
+      <h2>My Accounts</h2>
+      <p>
+        You can send messages via <a href="mailto:contact@fayas.me">email</a>
+        or you can contact me via my
+        <a href="/accounts">accounts</a> and please follow / subscribe / join my <a href="/accounts">accounts</a>.
+      </p>
+    </section>
+    <hr width="100%"/>
+    <section data-aos="fade-left" class="section-4" id="projects">
+      <h2>My Projects</h2>
+      <p>
+        I created more public projects like APIs, Python Packages, Opensource
+        Repositories etc. You can checkout my projects <a href="/projects">here</a>.
+      </p>
+    </section>
+    <hr width="100%"/>
+    <section data-aos="fade-up" class="section-5" id="donate">
+      <h2>Donate for me</h2>
+      <p>
+        Your donation needed for me. Please donate any amount via my <a href="/donate">donation links</a>.
+      </p>
+    </section>
+    <hr width="100%"/>
+    <section data-aos="fade-down" class="section-7" id="thanks">
+      <h4>&copy; 2021 - Fayas Noushad</h4>
+    </section>
+    <hr width="100%"/>
+
+    <!-- animation script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Scroll to top button script
+      const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+      btnScrollToTop.addEventListener("click", function(){
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+  </body>
+</html>
