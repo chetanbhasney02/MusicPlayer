@@ -61,6 +61,7 @@ header {
 }
 
 header a {
+    padding: 6px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -68,9 +69,13 @@ header a {
     color: #ffffff;
     margin: 10px;
     transition: color 1s;
+    border: 2px solid transparent;
 }
 
 header a:hover {
+    
+    border: 2px solid black;
+    border-radius: 9px;
     color: black;
     background-color: white;
 }
@@ -207,6 +212,13 @@ section h3 {
     outline: none;
     cursor: pointer;
 }
+
+#btnScrollToTop:hover {
+    transition: all ease-in-out 0.5s;
+    background-color: #F5F5F5;
+    color: black;
+}
+
 
 #btnScrollToTop:active{
     background: #22272d;
